@@ -40,4 +40,8 @@ function App() {
   )
 }
 
+function placeholderFunction() {
+    console.log("This is a placeholder function.");
+}
+
 export default App
