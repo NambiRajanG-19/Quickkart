@@ -1,0 +1,127 @@
+.order-history-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  z-index: 1200;
+}
+
+.order-history-modal {
+  position: fixed;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: min(920px, calc(100% - 32px));
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.18);
+  z-index: 1201;
+  padding: 28px;
+}
+
+.order-history-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.order-history-header h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: var(--text);
+}
+
+.order-history-subtitle {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.order-history-close {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.order-history-empty {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.order-history-list {
+  display: grid;
+  gap: 18px;
+}
+
+.order-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.order-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.order-card-top h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.order-meta {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.order-total-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  background: var(--brand-strong);
+  color: #ffffff;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.order-items-count {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.order-item-list {
+  display: grid;
+  gap: 12px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .order-history-modal {
+    width: calc(100% - 24px);
+    max-height: calc(100vh - 20px);
+  }
+}
